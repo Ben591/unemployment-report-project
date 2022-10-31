@@ -3,17 +3,7 @@
 ## Usage
 
 ```sh
-python app/project_code.py
-```
-
-## Setup
-
-Create and activate a virtual environment:
-
-```sh
-conda create -n unemployment-env python=3.8
-
-conda activate unemployment-env
+python app/project.py
 ```
 
 ## Configuration
@@ -32,8 +22,8 @@ ALPHAVANTAGE_API_KEY="_________"
 Run the unemployment report:
 
 ```sh
-python app/project_code.py
+python app/project.py
 
 # of pass env var from command line:
-ALPHAVANTAGE_API_KEY="_________" python app/project_code.py
+ALPHAVANTAGE_API_KEY="_________" python app/project.py
 ```
