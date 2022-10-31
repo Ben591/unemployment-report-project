@@ -1,13 +1,8 @@
-import os
 import json
 import requests
 
-from dotenv import load_dotenv
 from plotly.express import line
-
-load_dotenv()
-
-API_KEY = os.getenv("API_KEY")
+from app.alpha import API_KEY
 
 request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
 
