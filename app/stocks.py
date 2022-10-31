@@ -9,9 +9,9 @@ from pandas import read_csv
 
 load_dotenv()
 
-API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
+API_KEY = os.getenv("API_KEY")
 
-symbol = input("Please input a crypto symbol (default: 'NFLX'): ") or "NFLX"
+symbol = input("Please input a stock symbol (default: 'NFLX'): ") or "NFLX"
 print("SYMBOL:", symbol)
 
 request_url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={symbol}&apikey={API_KEY}&datatype=csv"
