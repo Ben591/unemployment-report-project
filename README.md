@@ -27,3 +27,11 @@ python app/project.py
 # of pass env var from command line:
 ALPHAVANTAGE_API_KEY="_________" python app/project.py
 ```
+
+## Testing
+
+Run tests:
+
+```sh
+pytest
+```
