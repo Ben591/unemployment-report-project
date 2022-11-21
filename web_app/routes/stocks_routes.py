@@ -1,4 +1,5 @@
 
+
 # this is the "web_app/routes/stocks_routes.py" file ...
 
 from flask import Blueprint, request, render_template, redirect, flash
@@ -11,7 +12,6 @@ stocks_routes = Blueprint("stocks_routes", __name__)
 def stocks_form():
     print("STOCKS FORM...")
     return render_template("stocks_form.html")
-
 
 @stocks_routes.route("/stocks/dashboard", methods=["GET", "POST"])
 def stocks_dashboard():
@@ -46,16 +46,6 @@ def stocks_dashboard():
 
         #flash("Market Data Error. Please check your symbol and try again!", "danger")
         return redirect("/stocks/form")
-
-
-
-
-
-
-
-
-
-
 
 #
 # API ROUTES
