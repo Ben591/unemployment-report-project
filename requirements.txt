@@ -11,3 +11,5 @@ plotly
 pytest
 
 flask
+
+gunicorn
